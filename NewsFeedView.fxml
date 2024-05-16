@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="SocialMediaPlatform.NewsFeedController" prefWidth="800" prefHeight="600">
+    <top>
+        <VBox spacing="10" alignment="CENTER">
+            <Button text="Create Post" onAction="#showCreatePost" />
+            <TextArea fx:id="commentField" promptText="Enter your comment" />
+        </VBox>
+    </top>
+    <center>
+        <ListView fx:id="postListView" />
+    </center>
+    <bottom>
+        <Button text="Back" onAction="#back" alignment="CENTER"/>
+    </bottom>
+</BorderPane>
